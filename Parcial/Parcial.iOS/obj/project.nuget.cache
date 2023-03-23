@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "daScvp/P4UpzhVSIARNdL7oBbpzPyKrQPiaFPaw86MTA10t4Lrluf3sNZzEfO1FRZQf3cqs12O/r8SOoUBjq+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USUARIO\\source\\repos\\Parcial\\parcial\\parcial.iOS\\parcial.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parcial.detalle">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding titulo}" FontSize="Title"/>
+            <Image Source="{Binding foto}"/>
+            <Label Text="{Binding descripcion}" FontSize="Large"/>
+            <Label Text="{Binding fecha, StringFormat='{0:d}'}" FontSize="Large"/>
+            <Button Text="Editar" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

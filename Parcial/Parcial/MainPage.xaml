@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="parcial.MainPage">
+
+    <StackLayout>
+        <StackLayout>
+            <Frame>
+                <SearchBar Placeholder="Busqueda por titulo" 
+                           Keyboard="Chat" 
+                           TextChanged="SearchBar_TextChanged" 
+                           x:Name="buscar"/>
+            </Frame>
+        </StackLayout>
+        <CollectionView ItemsSource="{Binding ListadoContactos}"
+                        SelectionMode="Single"
+                        EmptyView="No hay elementos"
+                        SelectionChanged="listado_SelectionChanged"
+                        x:Name="listado">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="25">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Label Text="{Binding fecha, StringFormat='{0:d}'}" FontSize="Small" Grid.Row="0" Grid.Column="0"/>
+                        <Label x:Name="NO" Text="{Binding titulo}" FontSize="Title" Grid.Row="1" Grid.Column="0"/>
+                            
+                        <Button Grid.RowSpan="2" Grid.Row="0" Grid.Column="1" Text="Ver" Clicked="Button_Clicked"/>
+                        <Button Grid.RowSpan="2" Grid.Row="0" Grid.Column="2" Text="Eliminar" Clicked="Button_Clicked_1"/>
+                    </Grid>
+
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+        <StackLayout>
+            <Button Clicked="Button_Clicked_2" Text="Nuevo"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
